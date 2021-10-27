@@ -1,3 +1,15 @@
 // Place all the styles related to the LineItems controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@keyframes line-item-highlight {
+    0% {
+        background: rgb(245, 244, 244);
+    }
+    100% {
+        background: rgb(196, 16, 16);
+        // background: none;
+    }
+}
+.line-item-highlight {
+    animation: line-item-highlight 1s;
+}
