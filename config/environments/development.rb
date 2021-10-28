@@ -4,6 +4,17 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   config.hosts.clear
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "mrahman212050@mscse.uiu.ac.bd",
+    port: 587,
+    domain: "domain.of.sender.net",
+    authentication: "plain",
+    user_name: "dave",
+    password: "secret",
+    enable_starttls_auto: true
+  }
+
   #development with multiple machines, must disable this check.
   config.action_cable.disable_request_forgery_protection = true
 

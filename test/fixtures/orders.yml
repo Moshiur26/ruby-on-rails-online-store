@@ -3,7 +3,7 @@
 one:
   name: MyString
   address: MyText
-  email: MyString
+  email: "mrahman153026@bscse.uiu.ac.bd"
   pay_type: 1
 
 two:
